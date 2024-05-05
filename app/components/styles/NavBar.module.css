@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-Regular.ttf");
+}
+
+.NavBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.NavBar .logo {
+}
+.NavBar .logo svg {
+}
+.NavBar .btns {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.NavBar .btns .btn {
+  font-size: 16px;
+  line-height: 0.9;
+  color: white;
+  font-family: "Roobert";
+  padding: 1rem 2rem;
+  backdrop-filter: blur(13px);
+  background-color: rgba(25, 25, 25, 0.4);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
