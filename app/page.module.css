@@ -11,16 +11,12 @@
 .page {
   font-family: "Roobert";
 }
-.section {
-  height: 100vh;
-}
 /* ----------- Section 1 ----------- */
 .section_1 {
   position: relative;
   height: 100vh;
   padding: 0.75rem;
   width: 100%;
-  overflow: hidden;
 }
 .section_1 video {
   width: 100%;
