@@ -2,6 +2,10 @@
   font-family: "Roobert";
   src: url("../../../public/fonts/Roobert-Regular.ttf");
 }
+@font-face {
+  font-family: "Orbikular";
+  src: url("../../../public/fonts/Orbikular-Regular.ttf");
+}
 
 .NavBar {
   width: 100%;

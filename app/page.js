@@ -26,8 +26,23 @@ export default function Home() {
     });
   });
   return (
-    <main className={styles.main}>
+    <>
       <NavBar />
-    </main>
+      <main className={styles.page}>
+        <section className={`${styles.section_1} ${styles.section}`}>
+          <video
+            data-fullscreen-video="video"
+            loop="true"
+            muted="true"
+            autoplay="true"
+            width="100%"
+            height="100%"
+            src="/public/heroVideo.mp4"
+          ></video>
+        </section>
+        <section className={`${styles.section_2} ${styles.section}`}></section>
+        <section className={`${styles.section_3} ${styles.section}`}></section>
+      </main>
+    </>
   );
 }
