@@ -14,12 +14,31 @@
   left: 0;
   padding: 1.5rem;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
+  z-index: 99;
 }
 .NavBar .logo {
+  margin-left: 12px;
 }
-.NavBar .logo svg {
+.NavBar .logo svg path:nth-child(2),
+.NavBar .logo svg path:nth-child(3),
+.NavBar .logo svg path:nth-child(4),
+.NavBar .logo svg path:nth-child(5),
+.NavBar .logo svg path:nth-child(6),
+.NavBar .logo svg path:nth-child(7),
+.NavBar .logo svg path:nth-child(8),
+.NavBar .logo svg path:nth-child(9),
+.NavBar .logo svg path:nth-child(10),
+.NavBar .logo svg path:nth-child(11),
+.NavBar .logo svg path:nth-child(12),
+.NavBar .logo svg path:nth-child(13),
+.NavBar .logo svg path:nth-child(14),
+.NavBar .logo svg path:nth-child(15),
+.NavBar .logo svg path:nth-child(16),
+.NavBar .logo svg path:nth-child(17),
+.NavBar .logo svg path:nth-child(18) {
+  fill: white;
 }
 .NavBar .btns {
   display: flex;
