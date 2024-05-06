@@ -54,7 +54,27 @@ export default function Home() {
             <button>Play Real</button>
           </div>
         </section>
-        <section className={`${styles.section_2} ${styles.section}`}></section>
+        <section className={`${styles.section_2} ${styles.section}`}>
+          <p className={styles.heading}>
+            Being visible is just no longer enough. It’s all about leveraging
+            attention. And then moving forward together. Synced.
+          </p>
+          <div className={styles.body}>
+            <p>[DIGITAL DESIGN STUDIO]</p>
+            <div>
+              <p className={styles.head}>Our motto</p>
+              <p>
+                <span>We deliver brands with high objectives</span> the strategy
+                and the creativity it takes to have that impact, by teaming up
+                with some of the best talents out there.
+                <br />
+                <br />
+                Without ever compromising on keeping your teams happy and sane.
+              </p>
+            </div>
+            <video src="/assets/videoSection2.mp4" loop autoPlay muted />
+          </div>
+        </section>
         <section className={`${styles.section_3} ${styles.section}`}></section>
       </main>
     </>

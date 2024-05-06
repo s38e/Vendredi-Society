@@ -7,15 +7,20 @@
   font-family: "Orbikular";
   src: url("../public/fonts/Orbikular-Regular.ttf");
 }
+@font-face {
+  font-family: "Orbikular-ExtraLight";
+  src: url("../public/fonts/Orbikular-ExtraLight.ttf");
+}
 /* ----------- General ----------- */
 .page {
   font-family: "Roobert";
 }
 .section {
-  height: 100vh;
+  margin-top: 200px;
 }
 /* ----------- Section 1 ----------- */
 .section_1 {
+  margin-top: 0;
   position: relative;
   height: 100vh;
   padding: 0.75rem;
@@ -49,7 +54,7 @@
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: 
   flex-direction: column;
   gap: 1.5em;
 }
@@ -68,4 +73,71 @@
   border-radius: 10px;
   color: white;
   display: none;
+}
+/* ----------- Section 2 ----------- */
+.section_2 {
+  padding-left: 120px;
+  padding-right: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 120px;
+}
+.section_2 .heading {
+  margin-right: auto;
+  max-width: 1200px;
+  font-size: 4.0625rem;
+  line-height: 0.95;
+  font-family: "Orbikular-ExtraLight";
+  color: rgb(0, 41, 33);
+}
+.section_2 .body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.section_2 .body p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  color: #002921;
+}
+.section_2 .body div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  grid-column-end: 6;
+  grid-column-start: 4;
+  gap: 3rem;
+}
+.section_2 .body div p:first-child {
+  background-color: #e6efef;
+  border-radius: 99px;
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.75rem 1rem;
+  text-transform: none;
+}
+.section_2 .body div p:last-child {
+  max-width: 80%;
+  font-weight: 300;
+  color: #809490;
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+.section_2 .body div p:last-child span {
+  color: #001713;
+  font-weight: 400;
+}
+.section_2 .body video {
+  grid-column-end: 7;
+  grid-column-start: 6;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
