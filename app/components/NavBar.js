@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import stylesPage from "@/app/page.module.css";
 import styles from "./styles/NavBar.module.css";
+import gsap from "gsap";
 
 function NavBar() {
+  const [isSectionVisible, setIsSectionVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionElement = document.querySelector(`.${stylesPage.section_1}`);
+      if (sectionElement) {
+        const sectionTop = sectionElement.getBoundingClientRect().top;
+        const sectionBottom = sectionElement.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+
+        // إذا كان المستخدم داخل حدود السكشن
+        if (sectionTop <= windowHeight && sectionBottom >= 0) {
+          setIsSectionVisible(true); // المستخدم داخل السكشن
+        } else {
+          setIsSectionVisible(false); // المستخدم خارج السكشن
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav className={styles.NavBar}>
-      <div className={styles.logo}>
+      <div
+        className={`${styles.logo} ${
+          isSectionVisible ? "" : styles.OutSection
+        }`}
+      >
         <svg
           width="167"
           height="19"

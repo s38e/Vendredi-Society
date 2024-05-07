@@ -387,3 +387,45 @@
   grid-column-start: 13;
   grid-column-end: 6;
 }
+/* ----------- Section 6 ----------- */
+.section_6 {
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 120px;
+}
+.section_6 .heading {
+  font-size: 4.0625rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  text-align: center;
+}
+.section_6 .heading span {
+  position: relative;
+}
+.section_6 .heading span::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 100%;
+  background-color: #002921;
+}
+.section_6 .body {
+  width: 100%;
+  padding: 11.25rem 0;
+  background-color: #002921;
+  border-radius: 12px;
+  cursor: grab;
+  overflow: hidden;
+  position: relative;
+}
+/*  */
+.section_7,
+.section_8 {
+  height: 100vh;
+}

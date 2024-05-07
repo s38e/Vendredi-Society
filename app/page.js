@@ -12,6 +12,7 @@ import Lenis from "@studio-freight/lenis";
 import CircleSection_1 from "./components/CircleSection_1";
 import { useEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
+import CircleSection_6 from "./components/CircleSection_6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -218,7 +219,18 @@ export default function Home() {
           </div>
           <div className={styles.right}></div>
         </section>
-        <section className={`${styles.section_6} ${styles.section}`}></section>
+        <section className={`${styles.section_6} ${styles.section}`}>
+          <h3 className={styles.heading}>
+            Hear It from those
+            <br />
+            <span>who’ve grown</span>
+          </h3>
+          <div className={styles.body}>
+            <CircleSection_6 />
+          </div>
+        </section>
+        <section className={`${styles.section_7} ${styles.section}`}></section>
+        <section className={`${styles.section_8} ${styles.section}`}></section>
       </main>
     </>
   );

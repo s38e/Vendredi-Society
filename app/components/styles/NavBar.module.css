@@ -40,6 +40,12 @@
 .NavBar .logo svg path:nth-child(18) {
   fill: white;
 }
+.NavBar .logo svg path {
+  transition: 0.25s;
+}
+.NavBar .logo.OutSection svg path {
+  fill: #002921;
+}
 .NavBar .btns {
   display: flex;
   align-content: center;
