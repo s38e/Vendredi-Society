@@ -14,7 +14,7 @@ const CircleSection_1 = () => {
       const text = textRef.current;
 
       // جعل العناصر غير مرئية في البداية
-      gsap.set([circle, text], { scale: 0, opacity: 0 });
+      // gsap.set([circle, text], { duration: "auto", scale: 0, opacity: 0 });
 
       const onMouseMove = (e) => {
         const mouseX = e.clientX;

@@ -226,10 +226,12 @@
 }
 /* ----------- Section 4 ----------- */
 .section_4 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 0.75rem;
   gap: 7.5rem;
 }
 .section_4 .heading {
@@ -251,4 +253,137 @@
   height: 3px;
   width: 100%;
   background-color: #002921;
+}
+.section_4 .body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.section_4 .body .card {
+  position: sticky;
+  top: 6%;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 120px;
+  padding: 0.75rem;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+}
+.section_4 .body .card:first-child {
+  background-color: #f2f7f7;
+}
+.section_4 .body .card:last-child {
+  background-color: #c0d8d7;
+}
+.section_4 .body .card .top {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 20px;
+}
+.section_4 .body .card .top span {
+  grid-column-end: 8;
+  grid-column-start: 1;
+  font-size: 7.625rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 60%;
+}
+.section_4 .body .card .top h4 {
+  font-size: 3.1875rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+  grid-column-end: 13;
+  grid-column-start: 9;
+}
+.section_4 .body .card .bottom {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+}
+.section_4 .body .card .bottom img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  grid-column-end: 8;
+  grid-column-start: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.section_4 .body .card .bottom div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column-end: 13;
+  grid-column-start: 9;
+}
+.section_4 .body .card .bottom div p {
+  color: #809490;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  max-width: 330px;
+}
+.section_4 .body .card .bottom div p span {
+  color: #001713;
+}
+.section_4 .body .card .bottom div button {
+  background-color: #002921;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0.9;
+  padding: 0;
+  padding: 1rem 2rem;
+  font-family: "Roobert";
+  font-size: 16px;
+}
+/* ----------- Section 5 ----------- */
+.section_5 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 0.75rem;
+}
+.section_5 .left {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  position: relative;
+}
+.section_5 .left h3 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 4.0625rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+.section_5 .left h3 span {
+  position: relative;
+}
+.section_5 .left h3 span::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 100%;
+  background-color: #002921;
+}
+.section_5 .right {
+  grid-column-start: 13;
+  grid-column-end: 6;
 }

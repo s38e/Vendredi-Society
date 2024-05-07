@@ -1,15 +1,17 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 import NavBar from "./components/NavBar";
+import img_1_Section3 from "@/public/assets/img_1_Section3.webp";
+import img_1_Section4 from "@/public/assets/img_1_Section4.webp";
+import img_2_Section4 from "@/public/assets/img_2_Section4.webp";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import CircleSection_1 from "./components/CircleSection_1";
 import { useEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
-import Link from "next/link";
-import img_1_Section3 from "@/public/assets/img_1_Section3.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +30,23 @@ export default function Home() {
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
     });
+    // ----------- 3D Card Slider ----------- //
+    gsap.to(
+      `.${styles.section_4} .${styles.body} .${styles.card}:nth-child(1)`,
+      {
+        scale: 0.6,
+        y: "-10%",
+        z: 10,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: `.${styles.section_4} .${styles.body}`,
+          scrub: 1,
+          // markers: true,
+          start: "top 6%",
+          end: "bottom 6%",
+        },
+      }
+    );
   });
   return (
     <>
@@ -141,8 +160,65 @@ export default function Home() {
             <br />
             <span>every vision</span>
           </h3>
+          <div className={styles.body}>
+            <div className={styles.card}>
+              <div className={styles.top}>
+                <span className={styles.count}>01</span>
+                <h4>
+                  Your own
+                  <br />
+                  top-dogs
+                  <br />
+                  team
+                </h4>
+              </div>
+              <div className={styles.bottom}>
+                <Image src={img_1_Section4} alt="Your own top-dogs team" />
+                <div>
+                  <p>
+                    <span>Custom talents.</span> The perfect gang of
+                    high-profile creatives to exceed your business objectives.
+                    Full focus. Full grit.
+                  </p>
+                  <button>Our model</button>
+                </div>
+              </div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.top}>
+                <span className={styles.count}>02</span>
+                <h4>
+                  Big project?
+                  <br />
+                  Team scales
+                </h4>
+              </div>
+              <div className={styles.bottom}>
+                <Image src={img_2_Section4} alt="Big project? Team scales" />
+                <div>
+                  <p>
+                    <span>Scalable workforce.</span> Your marketing needs
+                    getting more intense? Get extra designers, copywriters or
+                    developers ready to execute. Already up-to-date on the
+                    project, of course.
+                  </p>
+                  <button>Our model</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section className={`${styles.section_5} ${styles.section}`}></section>
+        <section className={`${styles.section_5} ${styles.section}`}>
+          <div className={styles.left}>
+            <h3>
+              Made for
+              <br />
+              <span>big-time returns.</span>
+            </h3>
+          </div>
+          <div className={styles.right}></div>
+        </section>
+        <section className={`${styles.section_6} ${styles.section}`}></section>
       </main>
     </>
   );
