@@ -141,3 +141,114 @@
   height: 100%;
   object-fit: cover;
 }
+/* ----------- Section 3 ----------- */
+.section_3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 0.75rem;
+}
+.section_3 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.section_3 .card a .Texts {
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.section_3 .card a .Texts .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.section_3 .card a .Texts .top p {
+  color: #002921;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.section_3 .card a .Texts .top h2 {
+  color: #002921;
+  font-size: 1.6875rem;
+  font-weight: 400;
+}
+.section_3 .card:first-child a .Texts .top p,
+.section_3 .card:first-child a .Texts .top h2 {
+  color: white;
+}
+.section_3 .card a .Texts .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.section_3 .card a .Texts .bottom .tag {
+  backdrop-filter: blur(13px);
+  background-color: rgba(25, 25, 25, 0.4);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 100rem;
+}
+.section_3 .card a .Background {
+  width: 100%;
+}
+.section_3 .card a .Background img,
+.section_3 .card a .Background video {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.section_3 .card:nth-child(2) a .Background video {
+  scale: 1.005;
+}
+.section_3 .card:nth-child(3) {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+/* ----------- Section 4 ----------- */
+.section_4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7.5rem;
+}
+.section_4 .heading {
+  color: #002921;
+  font-size: 4.0625rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  text-align: center;
+}
+.section_4 .heading span {
+  position: relative;
+}
+.section_4 .heading span::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 100%;
+  background-color: #002921;
+}

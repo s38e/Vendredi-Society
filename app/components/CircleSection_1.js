@@ -13,6 +13,9 @@ const CircleSection_1 = () => {
       const circle = circleRef.current;
       const text = textRef.current;
 
+      // جعل العناصر غير مرئية في البداية
+      gsap.set([circle, text], { scale: 0, opacity: 0 });
+
       const onMouseMove = (e) => {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
@@ -43,10 +46,10 @@ const CircleSection_1 = () => {
             x: mouseX - textWidth / 2,
             y: mouseY - textHeight / 2,
           });
-          gsap.to([circle, text], { duration: "auto", scale: 1 });
+          gsap.to([circle, text], { duration: "auto", scale: 1, opacity: 1 });
         } else {
           // المؤشر خارج حدود السكشن
-          gsap.to([circle, text], { duration: "auto", scale: 0 });
+          gsap.to([circle, text], { duration: "auto", scale: 0, opacity: 0 });
         }
       };
 
