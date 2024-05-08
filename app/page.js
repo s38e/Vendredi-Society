@@ -13,6 +13,7 @@ import CircleSection_1 from "./components/CircleSection_1";
 import { useEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
 import CircleSection_6 from "./components/CircleSection_6";
+import Slider from "./components/slider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -227,6 +228,7 @@ export default function Home() {
           </h3>
           <div className={styles.body}>
             <CircleSection_6 />
+            <Slider />
           </div>
         </section>
         <section className={`${styles.section_7} ${styles.section}`}></section>

@@ -1,0 +1,70 @@
+.slider {
+  width: 100%;
+  cursor: grab;
+  position: relative;
+}
+.slider .sliderWrapper {
+  white-space: nowrap;
+}
+.slider .sliderWrapper .sliderItem {
+  display: inline-block;
+  background-color: #e6efef;
+  color: #001713;
+  padding: 1.5rem;
+  width: 50vw;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+.slider .sliderWrapper .sliderItem figure {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.slider .sliderWrapper .sliderItem figure .clientReview {
+  white-space: wrap;
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+.slider .sliderWrapper .sliderItem figure .clientInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.slider .sliderWrapper .sliderItem figure .clientInfo img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  vertical-align: middle;
+}
+.slider .sliderWrapper .sliderItem figure .clientInfo .texts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+}
+.slider .sliderWrapper .sliderItem figure .clientInfo .texts p:first-child {
+  font-size: 0.9375rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #001713;
+}
+.slider .sliderWrapper .sliderItem figure .clientInfo .texts p:last-child {
+  font-size: 0.75rem;
+  color: #001713;
+  opacity: 0.5;
+}
+.slider .sliderBar {
+  position: absolute;
+  height: 0;
+  width: 0%;
+  background-color: transparent;
+}

@@ -9,7 +9,7 @@
   background-color: rgba(25, 25, 25, 0.4);
   backdrop-filter: blur(13px);
   color: white;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0;
   pointer-events: none;
@@ -27,7 +27,7 @@
   position: fixed;
   color: white;
   pointer-events: none;
-  z-index: 2;
+  z-index: 12;
   top: 0;
   left: 0;
   opacity: 0;
